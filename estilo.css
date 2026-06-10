@@ -1,0 +1,92 @@
+nav, div, ul, main, aside, footer, header{
+    border: 1px solid red;
+}
+
+#conteiner{
+    display: grid;
+
+    grid-template-areas: 
+        "cabecalho cabecalho cabecalho"
+        "navegacao principal propaganda"
+        "rodape rodape rodape"
+        ;
+
+    grid-template-columns: 200px 1fr 200px; 
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header{
+    grid-area: cabecalho;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #c4170c;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 15px;
+    text-transform: uppercase;
+    
+}
+
+nav{
+    grid-area: navegacao ;
+    padding: 1px;
+}
+
+main {
+    grid-area: principal;
+    padding: 15px;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse; /* Une as bordas das células */
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    align-content: center;
+}
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    gap: 15px;
+}
+.i1{
+    width: 100px;
+    max-width: 50px;
+    max-height: 80px;
+
+}
+.i2{
+    max-width: 50px;
+    max-height: 80px;
+    width: 100px;
+}
+
+aside {
+    grid-area: propaganda;
+    padding: 15px;
+    background-image: url("img/lego.png");
+    background-size: cover;
+    font: bolder;
+    font-style: italic;
+}
+
+ol{
+    font-size: 20px;
+}
+
