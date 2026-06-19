@@ -57,9 +57,9 @@ table th, table td {
 }
 
 .image{
-    display: flex;
     flex-direction: row;
-    width: 20%;
+    justify-content: center;
+    width: 10%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
